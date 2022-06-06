@@ -7,118 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shiva Vijai's website</title>
     <!-- Import style.css from root directory -->
-    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">    
+    <!-- Typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!--iconify-->
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
   
 <body>
-    <!-- Particles.js div -->
-    <div id="particles-js">
-        <div class="heading">
-            <h1>That was a trial</h1>
-            <h3>thats cool</h3>
+
+
+
+
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">
+                    <img src="S LOGO BLACK BACKGROUND lesser size.png" alt="Shiva's Logo" style="width:40px; height:40px; float:left;">
+            </a>
+
+            <h3 class="navbar-logo-side-text">Shiva Vijai</h3>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar1"></span> 
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <ul class="navbar__menu">
+
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#intro" class="navbar__links" id="intro-page">INTRO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#skills" class="navbar__links" id="resume-page">TECH SKILLS</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="main" id="home">
+        <!-- Particles.js div -->
+        <div id="particles-js">
+            <div class="heading">
+                <div class="fade-in-text">
+                    <h1></h1>
+                </div>
+                <p class="typing">
+                    <span class='typing1'>-----SV-----</span>
+                </p>
+                
+                <a herf="not-gonna-tell-my-discord-user-id!"><span class="iconify" data-icon="akar-icons:discord-fill"></span></a>
+                <a href="https://github.com/Shiva-Vijai"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>         
+                <a href="mailto:shivavijai2008@gmail.com"><span class="iconify" data-icon="fluent:mail-16-filled"></span></a>
+
+            
+            </div>
         </div>
     </div>
+    
+
+    
+    <div class="main" id="intro">
+        <h2 style="color: var(--color-theme)">#The <i>Intro</i></h2>
+        <div class="logo_box"><br><br><br><br></div>
+        <img src="S LOGO BLACK BACKGROUND lesser size.png" class="LOGO_NOT_THERE" id="logo" alt="Shiva's Logo">
+        <div class="logo_box_2"></div>
+        <p class="logo_intro_text">Hello!...The above is a (simple) logo made on photoshop. I am <span class="intro_highlight">Shiva Vijai</span> and I'm 14 years old. Like to explore and learn! I am a student and studying in 9th grade. I like to code with python (made discord bots and other stuff). I am also learning Javascript, HTML and CSS. When I was young I was fascinated by technologies and a lot more and I still continue the interest...😃 <br><br><br><span class="intro_highlight">Note: Please don't judge me by the passage listed above 😁</span></p>
+        
+    </div>
+    
 
 
-   
-      
+  
  
-      
     
     
-
-    <h1 style="background-color:DodgerBlue;"><br><br><br>Hello There!. I am Shiva Vijai and I am learning <b>JavaScript, HTML, CSS and Python</b></h1>
-    <h2 style="color:Tomato;">This is an "h2" tag</h2>
-    <h2 style="border:2px solid Tomato;">Hello World. THESE ARE BORDERS</h2>
-    <h2 style="border:2px solid DodgerBlue;">Hello World</h2>
-    <h2 style="border:2px solid Violet;">Hello World</h2>
-
-    
-
-
-    <p id="demo">JavaScript can hide HTML elements.</p>
-    <button type="button" class="button" onclick="document.getElementById('demo').style.display='none'; alert(5 + 6);">Click ME to HIDE!</button>
-    <button type="button" class="button" onclick="document.getElementById('demo').style.display='block'; window.alert('cool');">Click ME to UNHIDE!</button>
-    
-    <h1 class="test">rgb(25, 118, 81)) and center-aligned heading</h1>
-    <p class="test">rgb((25, 118, 81) and center-aligned paragraph.</p>
-    <p class="center">This paragraph will be red and center-aligned.</p>
-    <p class="large">This paragraph will be red and right-aligned.</p>
-    <p class="center large">This paragraph will be red, right-aligned, and in a large font-size.</p>
-    
-    <h2><br><br>Activate Debugging</h2>
-
-    <p>F12 on your keyboard will activate debugging.</p>
-    <p>Then select "Console" in the debugger menu.</p>
-    <p>Then click Run again.</p>
-
-    <script>
-    console.log('cool logging');
-
-
-
-    </script>
-
-    <h2><br><br>The window.print() Method</h2>
-
-    <p>Click the button to print the current page.</p>
-
-    <button onclick="window.print()">Print this page</button>
-
-
-    <p><br><br>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
-
-    <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-
-    <script>
-    let x, y, z;  // Statement 1
-    x = 5;        // Statement 2
-    y = 6;        // Statement 3
-    z = x + y;    // Statement 4
-
-    document.getElementById("demo1").innerHTML = "The value of z is " + z + ".";  
-
-    // Create an Array:
-    const cars = ["Saab", "Volvo", "BMW"];
-
-    // Change an element:
-    cars[0] = "Toyota";
-
-    // Add an element:
-    cars.push("Audi");
-
-    // Display the Array:
-    document.getElementById("demo2").innerHTML = cars; 
-
-
-    const car = {type:"Fiat", model:"500", color:"white"};
-
-    // Change a property:
-    car.color = "red";
-
-    // Add a property:
-    car.owner = "Johnson";
-
-    // Display the property:
-    document.getElementById("demo3").innerHTML = "Car owner is " + car.owner; 
-    </script>
-
-    <h2>The border-style Property</h2>
-    <p>This property specifies what kind of border to display:</p>
-
-    <p class="dotted">A dotted border.</p>
-    <p class="dashed">A dashed border.</p>
-    <p class="solid">A solid border.</p>
-    <p class="double">A double border.</p>
-    <p class="groove">A groove border.</p>
-    <p class="ridge">A ridge border.</p>
-    <p class="inset">An inset border.</p>
-    <p class="outset">An outset border.</p>
-    <p class="none">No border.</p>
-    <p class="hidden">A hidden border.</p>
-    <p class="mix">A mixed border.</p>
 
     
     
@@ -128,8 +102,13 @@
     <script src=
         "./particles.js">
     </script>
+    
     <script src=
         "./app.js">
+    </script>
+    
+    <script src=
+        "./main.js">
     </script>
 </body>
   
