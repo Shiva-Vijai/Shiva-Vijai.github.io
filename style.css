@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+} */
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #069370; 
+  border-radius: 10px;
+  border: #000 solid
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ace8d9;  
+  
+}
+
+
+.homepage {
+  height: 100vh
+}
+
+.bubble{
+    text-align: left;
+}
+/* The section of the home page bubble */
+.bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: rgb(34, 38, 39);
+    height: 85%;
+}
+
+
+
+
+/* Home page profile image */
+.home_profile_img {
+    border:7px solid #A1F7A7; 
+    padding:15px;
+    border-radius: 50%;
+    top: 18vh;
+    
+  
+    left: 50%;
+    transform: translateX(-50%);
+  
+    position: absolute;
+  
+    transition: all ease-in-out 1000ms;
+    width: 270px;
+    height: auto;
+  }
+
+
+
+/* Home page profile text */
+.name_homepage {
+    transform: translateY(60vh);
+    font-family: 'Audiowide', cursive;
+    font-size:350%;
+    color: #fff;
+    text-align: center; 
+    transition: all ease-in-out 500ms;
+}
+
+.home_section {
+    display: inline-block;
+    z-index: 1;
+}
+.home_section .name_homepage:hover {
+    color: #A1F7A7;
+    word-spacing: 10px;
+    transform: translate(-3vh, 60vh);
+}
+
+
+/* Typed.js Typing animation on homepage */
+.typing   {
+    font-family: 'Share Tech Mono', monospace;
+    transform: translateY(59vh);
+    text-align: center;
+    color: rgb(201, 220, 224);
+}
+.typing1 {
+    color: rgb(201, 220, 224);   
+}
+p.typing {
+    color: limegreen;
+    font-size: 120%;
+    font-weight: bold;
+  
+  }
+
+
+
+/* Homepage Button */
+.button {
+    z-index: 1;
+    transform: translateY(60vh);
+    font-family: 'Share Tech Mono', monospace;
+    background: linear-gradient(45deg, #c0f0c4 10%, #44d84e 90%);
+    border-radius: 25px;
+    border: solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  
+  }
+
+.button:hover {
+    box-shadow: -5px 7px 1px 0px  rgba(122, 147, 154, 0.995)/*,-10px 5px 10px 0 rgba(187, 175, 175, 0.989)*/;
+ }
+
+
+
+.after-curve {
+  position: sticky;
+  display: block;
+}
+.custom-shape-divider-top-1664632482 {
+  z-index: -1;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1664632482 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50vh;
+}
+
+.custom-shape-divider-top-1664632482 .shape-fill {
+  fill: #222627;
+}
+
+
+
+.about_profile_img {
+  border:7px solid #069370; 
+  padding:15px;
+  border-radius: 5px;
+  top: 25%;
+  margin-left: 5vw;
+  float: left;
+  position: sticky;
+  transition: all ease-in-out 1000ms;
+  width:  40vw;
+  height: auto;
+
+}
+
+.about-info {
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 0 5vw 0 50vw;
+  position: relative; 
+  display: flex; 
+  color: #ffffff;
+  text-align: justify;
+  background-color: #ffffff2a;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+   
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5vw;
+
+}
+.projects {
+  height: 100vh
+}
+.txtproject {
+  color:#fff;
+  margin-top:40vh;
+  font-family: 'Audiowide', cursive; 
+  font-size: 40px; 
+  float: left; 
+  width: 50vw; 
+  border-right-style: dashed;
+}
+
+
+
+
+
+
+
+.skills_section {
+  height: 100vh;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width:  100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skill-img {
+
+  width:120px; 
+  height:120px;
+  margin:10px;
+}
+
+
+
+
+.contact {
+  height: 25vh;
+}
+
+
+
+
+/* Navbar */
+header {
+  font-size: 150%;
+  font-family: 'Bebas Neue', cursive;
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+
+nav {
+  float: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+nav ul li {
+  list-style: none;
+  
+}
+
+nav ul li a {
+  
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+nav ul li a.active, nav ul li a:hover {
+  background: #069370;
+  border-radius: 20px;
+  color: #262626;
+  transition: 0.5s;
+}
+
+
+@media (max-width: 769px) {
+
+  .navbar-toggle .bar1 {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background: #1cd735;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .navbar-toggle .bar2 {
+    width: 25px;
+    height: 3px;
+    margin: 0px 0px 0px 15px;
+    transition: all 0.5s ease-in-out;
+    background: #ffffff;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .navbar-toggle .bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.5s ease-in-out;
+    background: #fff;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+  }
+
+
+
+  #mobile-menu.is-active .bar1 {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar2 {
+    transform: translateY(8px) rotate(45deg);
+    transform: translateX(-7px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.is-active {
+    font-size: 150%;
+    display: block;
+    width: 100%;
+  }
+  header {
+    left: 100%;
+    transform: translateX(-100%);
+    float: left;
+    display: grid;
+  } 
+
+  header.is-active {
+    left: 100%;
+    transform: translateX(-100%);
+    float: right;
+    display: grid;
+    width: 75%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    background: rgb(196, 195, 195);
+    border: 0;
+  } 
+
+  header.is-active #mobile-menu {
+    position: fixed;
+    display: block;
+    float: right
+  }
+
+  nav.is-active ul {
+    display: block;
+  }
+
+  nav.is-active ul li {
+    margin: 0;
+  }
+
+
+  /* HOMEPAGE BUBBLE */
+  .bubble::after {
+    height: 70%;
+  }
+
+  .home_profile_img{
+    width: 190px;
+    top: 30vh;
+    
+  }
+
+  .about_profile_img {
+    float: none;
+    position: relative; 
+  }
+  
+  .about-info {
+    margin: 0 5vw 0 5vw;
+    position: relative; 
+    display: inline-block; 
+    float: none;
+    font-size: 3vw;
+  
+  }
+  .profileic{
+    margin: 0 5vw 0 5vw;
+    display: block;
+    position: absolute;
+  }
+  .txtproject{
+    margin:40vh auto 0 auto ;
+    font-size: 5vw; 
+    float: none; 
+    width: 80vw; 
+    border-right-style: none;
+    border-bottom-style: dashed;
+
+  
+  }
+  .skill-img {
+    width:80px;
+    height:80px;
+    margin:10px;
+  }
+} 
+
+
+
+.homepage {
+  display: grid;
+  position: relative;
+}
+
+@media (max-width: 420px) {
+  .skill-img {
+    width:60px; 
+    height:60px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .home_profile_img{
+    width: 150px;
+    top: 35vh; 
+  }
+
+  .name_homepage {
+    font-size: 300%;
+  }
+  .skill-img {
+
+    width:40px; 
+    height:40px;
+  }
+  
+  .button {
+    padding: 15px 32px;
+    font-size: 13px;
+  }
+  
+}
+
+@media (min-width: 3000px) {
+  .home_profile_img{
+    width: 400px;
+    top: 30vh;
+  }
+
+  .name_homepage {
+    font-size: 500%;
+  }
+
+  p.typing {
+    font-size: 250%;
+  }
+
+  .button {
+    font-size: 250%;
+  }
+
+  header {
+    font-size: 400%;
+  }
+
+}

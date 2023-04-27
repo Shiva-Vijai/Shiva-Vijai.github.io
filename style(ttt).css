@@ -1,0 +1,76 @@
+
+.container {
+background-color: #ffffff2a;
+display: inline-block;
+position: relative;
+top: 35vh;
+
+}
+.buttonttt {
+
+  color: rgb(255, 255, 255); 
+  border: none;
+  font-family: 'Share Tech Mono', monospace;
+  background-color: #ffffff2a;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+
+.button-disabled {
+opacity: 0.65; 
+cursor: not-allowed;
+filter: blur(3px);
+}
+
+.button-win {
+background-color: #64dabd 
+}
+
+.buttonttt:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.statustext {
+align-items: center; 
+text-align: center;height: 249px; 
+width: 249px;
+position: absolute; 
+z-index: -1; 
+}
+
+
+.statustext p {
+font-family: 'Share Tech Mono', monospace;
+font-weight:bolder;
+position: relative;
+top: 50%;left: 50%;
+-ms-transform: translate(-50%, -75%);
+transform: translate(-50%, -75%);
+font-size: 30px;
+color: #79fb28; 
+text-shadow: -2px 2px 0 #000,
+              2px 2px 0 #000,
+              2px -2px 0 #000,
+              -2px -2px 0 #000;
+
+}  
+
+@media (max-width: 769px) {
+  .container {
+    position: relative;
+    top: 10vh;
+
+    
+    }
+
+}
